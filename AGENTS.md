@@ -60,8 +60,22 @@ Body structure should match existing pages:
 
 - H1 title
 - `URL` line
+- `Language` line when known
 - `Region` line
 - `Summary` section
+
+When enriching stub or thin resource pages:
+
+- Visit the live resource URL and any clearly linked documentation/about/API pages before rewriting.
+- Prefer concrete, research-useful detail over generic description: coverage, data types, search fields, record structure, source base, access model, and likely scholarly use cases.
+- Update weak placeholder titles, `language`, `china_relevance`, `description`, and tags when the source supports the change.
+- Write summaries in 2-4 substantive paragraphs when the source has enough information. Explain what the resource is, what kinds of records or materials it contains, how users search or browse it, and why it matters for Chinese studies or digital humanities.
+- For databases, tools, catalogues, and platforms, always check whether public APIs, downloadable data, GitHub repositories, RDF/TEI/CSV exports, or documented web services exist.
+- If an API exists, add an `API Access` section after the summary. Include endpoint URL patterns, required parameters, example calls, response format, important returned fields, and known limitations.
+- Distinguish documented APIs from observed but undocumented endpoints. If an endpoint works but is not clearly documented, say so and advise users to verify behavior before depending on it.
+- Note access limits honestly: login/subscription requirements, institutional proxy access, restricted records, API subsets, license constraints, or records visible in the web UI but absent from downloads/API.
+- Do not invent API behavior from URL patterns alone. Verify with documentation, a live request, or both.
+- Keep wording factual and avoid promotional claims. Do not paste long source text; paraphrase and cite key fields or capabilities.
 
 ### `topics/`
 
